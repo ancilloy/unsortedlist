@@ -112,7 +112,7 @@ public class MyUnsortedListTest {
 	
 	
 	@Test
-	public void deletionTest() {
+	public void deletionTest1() {
 		MyUnsortedList<Integer> l = MyUnsortedList.of(36, 30, 24, 18, 12);
 		
 		int n = l.pop();
@@ -120,7 +120,7 @@ public class MyUnsortedListTest {
 		assertEquals("Deletion test with pop (value)", 36,                                n);
 	}
 	@Test
-	public void deletionTest() {
+	public void deletionTest2() {
 		MyUnsortedList<Integer> l = MyUnsortedList.of(30, 24, 18, 12);
 		
 		int n = l.popLast();
@@ -128,7 +128,7 @@ public class MyUnsortedListTest {
 		assertEquals("Deletion test with popLast (value)", 12,                            n);
 	}
 	@Test
-	public void deletionTest() {
+	public void deletionTest3() {
 		MyUnsortedList<Integer> l = MyUnsortedList.of(30, 24, 18);
 		n = l.remove(1);
 		assertEquals("Deletion test with remove (list)",  MyUnsortedList.of(30, 18), l);
